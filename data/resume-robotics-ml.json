@@ -31,8 +31,9 @@
     {
       "name": "Thynkcity",
       "position": "Software Engineer",
+      "location": "Lagos, Nigeria (Remote)",
       "url": "",
-      "startDate": "2024-01-01",
+      "startDate": "2024-01",
       "endDate": "",
       "summary": "Developing and maintaining backend systems and core product services.",
       "highlights": [
@@ -44,9 +45,10 @@
     {
       "name": "Thynkcity",
       "position": "Machine Learning Engineer",
+      "location": "Lagos, Nigeria (Remote)",
       "url": "",
-      "startDate": "2021-11-01",
-      "endDate": "2023-09-30",
+      "startDate": "2021-11",
+      "endDate": "2023-09",
       "summary": "Designed and implemented advanced machine learning models.",
       "highlights": [
         "Designed and implemented machine learning models using TensorFlow for image recognition and NLP.",
@@ -57,9 +59,10 @@
     {
       "name": "Coderina",
       "position": "Robotics Tutor",
+      "location": "Lagos, Nigeria",
       "url": "",
-      "startDate": "2022-06-01",
-      "endDate": "2023-11-30",
+      "startDate": "2022-06",
+      "endDate": "2023-11",
       "summary": "Mentored students in robotics software fundamentals.",
       "highlights": [
         "Mentored over 50 students in logic, control loops, and sensor-actuator integration.",
@@ -73,8 +76,8 @@
       "organization": "Data Science Nigeria (FUNAAB Chapter)",
       "position": "Deputy Lead",
       "url": "",
-      "startDate": "2023-09-01",
-      "endDate": "2024-05-31",
+      "startDate": "2023-09",
+      "endDate": "2024-05",
       "summary": "Led technical initiatives in computer vision and data engineering.",
       "highlights": [
         "Spearheaded local workshops on Edge AI and machine learning deployment.",
@@ -89,8 +92,8 @@
       "url": "",
       "area": "Mechatronics Engineering",
       "studyType": "BEng",
-      "startDate": "2019-01-01",
-      "endDate": "2025-06-01",
+      "startDate": "2019",
+      "endDate": "2025-06",
       "score": "",
       "courses": [
         "Control Theory",
@@ -151,8 +154,10 @@
         "Optimized local inference for resource-constrained hardware.",
         "Integrated perception unit with cloud-backend for autonomous logging."
       ],
+      "keywords": ["Edge AI", "OpenCV", "Raspberry Pi", "Computer Vision"],
       "roles": ["Research Lead"],
-      "entity": "Self-Directed"
+      "entity": "Self-Directed",
+      "type": "application"
     },
     {
       "name": "Skin Cancer Detection System",
@@ -160,7 +165,11 @@
       "highlights": [
         "Trained on dermoscopic images to classify malignant melanoma.",
         "Implemented web interface using React and Node.js for image uploads."
-      ]
+      ],
+      "keywords": ["TensorFlow", "CNN", "React", "Node.js", "Medical AI"],
+      "roles": ["Developer"],
+      "entity": "Self-Directed",
+      "type": "application"
     }
   ]
 }

@@ -2,11 +2,18 @@
   "basics": {
     "name": "Fawaz Adeniji",
     "label": "Robotics Software Engineer",
+    "image": "",
     "email": "fawazadeniji123@gmail.com",
     "phone": "+2348130851842",
-    "website": "https://www.google.com/search?q=https://fawaz.dev",
+    "url": "https://fawaz.dev",
     "summary": "Specializing in computer vision perception, embedded systems, and autonomous integration. Proven experience deploying real-time Edge AI on hardware and architecting robust software systems for robotic ecosystems.",
-    "location": "Lagos, Nigeria",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Lagos",
+      "countryCode": "NG",
+      "region": "Lagos State"
+    },
     "profiles": [
       {
         "network": "LinkedIn",
@@ -22,11 +29,13 @@
   },
   "work": [
     {
-      "company": "Thynkcity",
+      "name": "Thynkcity",
       "position": "Software Engineer",
       "location": "Lagos, Nigeria (Remote)",
-      "startDate": "Jan 2024",
-      "endDate": "Present",
+      "url": "",
+      "startDate": "2024-01",
+      "endDate": "",
+      "summary": "Developing and maintaining backend systems using Node.js, Express, and TypeScript.",
       "highlights": [
         "Developing and maintaining backend systems using Node.js, Express, and TypeScript.",
         "Developed and maintained core product services by using TypeScript and JavaScript.",
@@ -34,11 +43,13 @@
       ]
     },
     {
-      "company": "Coderina",
+      "name": "Coderina",
       "position": "Robotics Tutor",
       "location": "Lagos, Nigeria",
-      "startDate": "Jun 2022",
-      "endDate": "Nov 2023",
+      "url": "",
+      "startDate": "2022-06",
+      "endDate": "2023-11",
+      "summary": "Mentored students in robotics software fundamentals.",
       "highlights": [
         "Mentored over 50 students in robotics software fundamentals, focusing on logic and control loops.",
         "Facilitated hardware labs centered on embedded system logic and robotic assembly using LEGO SPIKE Prime."
@@ -48,26 +59,33 @@
   "education": [
     {
       "institution": "Federal University of Agriculture, Abeokuta",
-      "area": "Mechatronics Engineering (BEng)",
-      "location": "Ogun, Nigeria",
+      "url": "",
+      "area": "Mechatronics Engineering",
+      "studyType": "BEng",
       "startDate": "2019",
-      "endDate": "2025"
+      "endDate": "2025",
+      "score": "",
+      "courses": []
     }
   ],
   "projects": [
     {
       "name": "Mobile Biometric Perception System",
-      "role": "Research Lead",
       "description": "Engineered an Edge AI perception pipeline on Raspberry Pi using OpenCV for real-time facial recognition and biometric tracking.",
       "highlights": [
         "Optimized local inference for resource-constrained hardware.",
         "Integrated perception unit with cloud-based backend."
-      ]
+      ],
+      "keywords": [],
+      "roles": ["Research Lead"],
+      "entity": "Self-Directed",
+      "type": "application"
     }
   ],
   "skills": [
     {
-      "category": "Robotics",
+      "name": "Robotics",
+      "level": "Advanced",
       "keywords": [
         "ROS2",
         "Raspberry Pi",
@@ -77,7 +95,8 @@
       ]
     },
     {
-      "category": "Software",
+      "name": "Software",
+      "level": "Advanced",
       "keywords": ["Python", "OpenCV", "C/C++", "TypeScript", "Node.js", "Git"]
     }
   ]
