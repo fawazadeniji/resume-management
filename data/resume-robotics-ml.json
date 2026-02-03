@@ -1,0 +1,166 @@
+{
+  "basics": {
+    "name": "Fawaz Adeniji",
+    "label": "Robotics & Machine Learning Engineer",
+    "image": "",
+    "email": "fawazadeniji123@gmail.com",
+    "phone": "+2348130851842",
+    "url": "https://github.com/fawazadeniji",
+    "summary": "Mechatronics Engineer specializing in the intersection of computer vision perception, autonomous systems, and embedded integration. Proven experience deploying real-time Edge AI on hardware and architecting robust software systems for robotic ecosystems.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Lagos",
+      "countryCode": "NG",
+      "region": "Lagos State"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fawazadeniji",
+        "url": "https://www.linkedin.com/in/fawazadeniji"
+      },
+      {
+        "network": "GitHub",
+        "username": "fawazadeniji",
+        "url": "https://github.com/fawazadeniji"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Thynkcity",
+      "position": "Software Engineer",
+      "url": "",
+      "startDate": "2024-01-01",
+      "endDate": "",
+      "summary": "Developing and maintaining backend systems and core product services.",
+      "highlights": [
+        "Developed core product services using TypeScript and JavaScript.",
+        "Built and documented new features and APIs using Node.js and Express.",
+        "Supported frontend engineers with seamless API integrations."
+      ]
+    },
+    {
+      "name": "Thynkcity",
+      "position": "Machine Learning Engineer",
+      "url": "",
+      "startDate": "2021-11-01",
+      "endDate": "2023-09-30",
+      "summary": "Designed and implemented advanced machine learning models.",
+      "highlights": [
+        "Designed and implemented machine learning models using TensorFlow for image recognition and NLP.",
+        "Optimized model training processes and deployment pipelines.",
+        "Analyzed large datasets to extract meaningful insights and improve model performance."
+      ]
+    },
+    {
+      "name": "Coderina",
+      "position": "Robotics Tutor",
+      "url": "",
+      "startDate": "2022-06-01",
+      "endDate": "2023-11-30",
+      "summary": "Mentored students in robotics software fundamentals.",
+      "highlights": [
+        "Mentored over 50 students in logic, control loops, and sensor-actuator integration.",
+        "Facilitated hardware labs centered on embedded system logic and robotic assembly.",
+        "Designed interactive lessons using LEGO SPIKE Prime."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Data Science Nigeria (FUNAAB Chapter)",
+      "position": "Deputy Lead",
+      "url": "",
+      "startDate": "2023-09-01",
+      "endDate": "2024-05-31",
+      "summary": "Led technical initiatives in computer vision and data engineering.",
+      "highlights": [
+        "Spearheaded local workshops on Edge AI and machine learning deployment.",
+        "Managed collaborative projects focused on perception pipelines and algorithmic efficiency.",
+        "Fostered a community focused on AI and its application in physical automation."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Federal University of Agriculture, Abeokuta",
+      "url": "",
+      "area": "Mechatronics Engineering",
+      "studyType": "BEng",
+      "startDate": "2019-01-01",
+      "endDate": "2025-06-01",
+      "score": "",
+      "courses": [
+        "Control Theory",
+        "Embedded Systems",
+        "Robotics Middleware",
+        "Computer Vision"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Robotics & Embedded",
+      "level": "Advanced",
+      "keywords": [
+        "ROS2",
+        "Raspberry Pi",
+        "Arduino",
+        "Embedded C",
+        "Sensor Integration",
+        "Control Logic"
+      ]
+    },
+    {
+      "name": "Perception & AI",
+      "level": "Advanced",
+      "keywords": [
+        "Python",
+        "OpenCV",
+        "TensorFlow",
+        "Edge AI",
+        "Computer Vision Pipelines",
+        "Deep Learning"
+      ]
+    },
+    {
+      "name": "Software Engineering",
+      "level": "Advanced",
+      "keywords": [
+        "TypeScript",
+        "Node.js",
+        "C++",
+        "Express.js",
+        "React",
+        "PostgreSQL",
+        "Git"
+      ]
+    }
+  ],
+  "languages": [
+    { "language": "English", "fluency": "Native" },
+    { "language": "Yoruba", "fluency": "Native" }
+  ],
+  "projects": [
+    {
+      "name": "Mobile Biometric Perception System",
+      "description": "Engineered an Edge AI perception pipeline on Raspberry Pi using OpenCV and picamera2 for real-time facial recognition.",
+      "highlights": [
+        "Optimized local inference for resource-constrained hardware.",
+        "Integrated perception unit with cloud-backend for autonomous logging."
+      ],
+      "roles": ["Research Lead"],
+      "entity": "Self-Directed"
+    },
+    {
+      "name": "Skin Cancer Detection System",
+      "description": "Developed a skin cancer detection system using Convolutional Neural Networks (CNNs) with TensorFlow.",
+      "highlights": [
+        "Trained on dermoscopic images to classify malignant melanoma.",
+        "Implemented web interface using React and Node.js for image uploads."
+      ]
+    }
+  ]
+}
