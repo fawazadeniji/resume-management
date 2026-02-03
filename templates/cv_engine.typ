@@ -19,10 +19,11 @@
 // --- HELPERS ---
 
 #let social_icon(network) = {
-  if network == "GitHub" { fa-github() }
-  else if network == "LinkedIn" { fa-linkedin() }
-  else if network == "Twitter" { fa-twitter() }
-  else if network == "X" { fa-x-twitter() }
+  let n = lower(network)
+  if n == "github" { fa-github() }
+  else if n == "linkedin" { fa-linkedin() }
+  else if n == "twitter" { fa-x-twitter() }
+  else if n == "x" { fa-x-twitter() }
   else { fa-globe() }
 }
 
