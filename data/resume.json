@@ -1,0 +1,84 @@
+{
+  "basics": {
+    "name": "Fawaz Adeniji",
+    "label": "Robotics Software Engineer",
+    "email": "fawazadeniji123@gmail.com",
+    "phone": "+2348130851842",
+    "website": "https://www.google.com/search?q=https://fawaz.dev",
+    "summary": "Specializing in computer vision perception, embedded systems, and autonomous integration. Proven experience deploying real-time Edge AI on hardware and architecting robust software systems for robotic ecosystems.",
+    "location": "Lagos, Nigeria",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "fawazadeniji",
+        "url": "https://linkedin.com/in/fawazadeniji"
+      },
+      {
+        "network": "GitHub",
+        "username": "fawazadeniji",
+        "url": "https://github.com/fawazadeniji"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Thynkcity",
+      "position": "Software Engineer",
+      "location": "Lagos, Nigeria (Remote)",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "highlights": [
+        "Developing and maintaining backend systems using Node.js, Express, and TypeScript.",
+        "Developed and maintained core product services by using TypeScript and JavaScript.",
+        "Built and documented new features and APIs, and supported frontend engineers with API integrations."
+      ]
+    },
+    {
+      "company": "Coderina",
+      "position": "Robotics Tutor",
+      "location": "Lagos, Nigeria",
+      "startDate": "Jun 2022",
+      "endDate": "Nov 2023",
+      "highlights": [
+        "Mentored over 50 students in robotics software fundamentals, focusing on logic and control loops.",
+        "Facilitated hardware labs centered on embedded system logic and robotic assembly using LEGO SPIKE Prime."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Federal University of Agriculture, Abeokuta",
+      "area": "Mechatronics Engineering (BEng)",
+      "location": "Ogun, Nigeria",
+      "startDate": "2019",
+      "endDate": "2025"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mobile Biometric Perception System",
+      "role": "Research Lead",
+      "description": "Engineered an Edge AI perception pipeline on Raspberry Pi using OpenCV for real-time facial recognition and biometric tracking.",
+      "highlights": [
+        "Optimized local inference for resource-constrained hardware.",
+        "Integrated perception unit with cloud-based backend."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Robotics",
+      "keywords": [
+        "ROS2",
+        "Raspberry Pi",
+        "Arduino",
+        "Embedded Linux",
+        "Sensor Integration"
+      ]
+    },
+    {
+      "category": "Software",
+      "keywords": ["Python", "OpenCV", "C/C++", "TypeScript", "Node.js", "Git"]
+    }
+  ]
+}
