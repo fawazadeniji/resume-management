@@ -27,6 +27,7 @@ done
 OUTPUT_FILE="output/${BASE_NAME}_v${VERSION}.pdf"
 
 # Compile the typst file, passing the data file name as input
-typst compile --input "data=$DATA_FILE" templates/cv_engine.typ "$OUTPUT_FILE"
+# --root . sets the project root so /data/ paths resolve correctly
+typst compile --root . --input "data=$DATA_FILE" templates/cv_engine.typ "$OUTPUT_FILE"
 
 echo "Done! Check $OUTPUT_FILE"
