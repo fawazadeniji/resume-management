@@ -48,8 +48,8 @@
   [
     #set align(right)
     #set text(size: 0.9em)
-    #data.basics.email \
-    #data.basics.phone \
+    #fa-phone() #data.basics.phone \
+    #fa-envelope() #data.basics.email \
     #for profile in data.basics.profiles [
       #social_icon(profile.network) #link(profile.url)[#profile.username] #h(8pt)
     ]
