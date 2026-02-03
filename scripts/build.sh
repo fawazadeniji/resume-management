@@ -28,6 +28,7 @@ OUTPUT_FILE="output/${BASE_NAME}_v${VERSION}.pdf"
 
 # Compile the typst file, passing the data file name as input
 # --root . sets the project root so /data/ paths resolve correctly
-typst compile --root . --input "data=$DATA_FILE" templates/cv_engine.typ "$OUTPUT_FILE"
+# --font-path ensures Font Awesome icons are found
+typst compile --root . --font-path "$HOME/.local/share/fonts" --input "data=$DATA_FILE" templates/cv_engine.typ "$OUTPUT_FILE"
 
 echo "Done! Check $OUTPUT_FILE"

@@ -1,6 +1,6 @@
 // --- CONFIGURATION ---
-// Data file can be specified via CLI: typst compile --input data=resume-frontend.json ...
-// Defaults to resume.json if not specified
+#import "@preview/iconic-salmon-fa:1.1.0": *
+
 #let data_file = sys.inputs.at("data", default: "resume.json")
 #let data = json("/data/" + data_file)
 #let primary_color = rgb("#2E58FF")
@@ -17,6 +17,14 @@
 )
 
 // --- HELPERS ---
+
+#let social_icon(network) = {
+  if network == "GitHub" { fa-github() }
+  else if network == "LinkedIn" { fa-linkedin() }
+  else if network == "Twitter" { fa-twitter() }
+  else if network == "X" { fa-x-twitter() }
+  else { fa-globe() }
+}
 
 #let section_title(title) = {
   v(12pt)
@@ -43,7 +51,7 @@
     #data.basics.email \
     #data.basics.phone \
     #for profile in data.basics.profiles [
-      #link(profile.url)[#profile.network: #profile.username] #h(4pt)
+      #social_icon(profile.network) #link(profile.url)[#profile.username] #h(8pt)
     ]
   ]
 )
