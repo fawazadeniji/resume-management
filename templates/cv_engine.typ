@@ -11,7 +11,7 @@
 )
 
 #set text(
-  font: "Noto Sans",
+  font: ("Noto Sans", "Arial", "Helvetica", "sans-serif"),
   size: 10pt,
   fill: rgb("#333333"),
 )
