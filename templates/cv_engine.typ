@@ -2,7 +2,7 @@
 // Data file can be specified via CLI: typst compile --input data=resume-frontend.json ...
 // Defaults to resume.json if not specified
 #let data_file = sys.inputs.at("data", default: "resume.json")
-#let data = json("../data/" + data_file)
+#let data = json("/data/" + data_file)
 #let primary_color = rgb("#2E58FF")
 
 #set page(
@@ -11,7 +11,7 @@
 )
 
 #set text(
-  font: ("Noto Sans", "Arial", "Helvetica", "sans-serif"),
+  font: "New Computer Modern",
   size: 10pt,
   fill: rgb("#333333"),
 )
