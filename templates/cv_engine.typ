@@ -18,6 +18,19 @@
 
 // --- HELPERS ---
 
+#let format_date(date_str) = {
+  if date_str == "" or date_str == none { return "Present" }
+  let months = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+  let parts = date_str.split("-")
+  let year = parts.at(0)
+  if parts.len() >= 2 {
+    let month_idx = int(parts.at(1)) - 1
+    months.at(month_idx) + " " + year
+  } else {
+    year
+  }
+}
+
 #let social_icon(network) = {
   let n = lower(network)
   if n == "github" { fa-github() }
@@ -67,8 +80,8 @@
   v(4pt)
   grid(
     columns: (1fr, auto),
-    [*#job.position*], [*#job.startDate – #job.endDate*],
-    [_ #job.company _], [_ #job.location _]
+    [*#job.position*], [*#format_date(job.startDate) – #format_date(job.endDate)*],
+    [_ #job.name _], [_ #job.location _]
   )
   v(1pt)
   for highlight in job.highlights {
@@ -82,7 +95,7 @@
 #for project in data.projects {
   grid(
     columns: (1fr, auto),
-    [*#project.name*], [*#project.role*]
+    [*#project.name*], [*#project.roles.first()*]
   )
   text(size: 0.9em)[#project.description]
   for h in project.highlights {
@@ -96,8 +109,8 @@
 #for edu in data.education {
   grid(
     columns: (1fr, auto),
-    [*#edu.institution*], [*#edu.startDate – #edu.endDate*],
-    [#edu.area], [#edu.location]
+    [*#edu.institution*], [*#format_date(edu.startDate) – #format_date(edu.endDate)*],
+    [#edu.area]
   )
 }
 
@@ -107,7 +120,7 @@
 #for skill_cat in data.skills {
   grid(
     columns: (100pt, 1fr),
-    [*#skill_cat.category*], [#skill_cat.keywords.join(", ")]
+    [*#skill_cat.name*], [#skill_cat.keywords.join(", ")]
   )
   v(2pt)
 }
