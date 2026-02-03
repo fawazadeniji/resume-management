@@ -11,7 +11,7 @@
 )
 
 #set text(
-  font: "New Computer Modern",
+  font: ("Noto Sans", "New Computer Modern"),
   size: 10pt,
   fill: rgb("#333333"),
 )
