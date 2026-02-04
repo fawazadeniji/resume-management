@@ -57,7 +57,7 @@
 #let section_title(title) = {
   v(14pt, weak: true)
   block(width: 100%)[
-    #set text(fill: primary_color, weight: "bold", size: 1.1em)
+    #set text(fill: primary_color, weight: "bold", size: .9em)
     #upper(title)
   ]
   v(4pt)
