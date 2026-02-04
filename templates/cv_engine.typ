@@ -104,9 +104,9 @@
       v(6pt, weak: true)
       grid(
         columns: (1fr, auto),
-        [_#job.name _], [*#job.position*],
+        [*#job.position*], [_#job.name _],
         "", "",
-        [_#job.location _], [#text(size: 0.85em, weight: "light")[#format_range(job.startDate, job)]]
+        [#text(size: 0.85em, weight: "light")[#format_range(job.startDate, job)]], [_#job.location _]
       )
       v(2pt)
       for highlight in job.highlights {
@@ -122,7 +122,7 @@
       #v(4pt, weak: true)
       #grid(
         columns: (1fr, auto),
-        [*#edu.institution*], [*#format_date(edu.startDate) - #format_date(edu.endDate)*],
+        [*#edu.institution*], [#format_date(edu.startDate) - #format_date(edu.endDate)],
         "", "",
         [_#edu.area (#edu.studyType)_], []
       )
@@ -130,19 +130,23 @@
     ]
 
     // --- LEFT COLUMN: PROJECTS ---
-    #section_title("Projects")
-    #for project in data.projects {
-      v(4pt, weak: true)
-      grid(
-        columns: (1fr, auto),
-        [*#project.name*], [*#project.roles.first()*]
-      )
-      v(2pt)
-      for h in project.highlights {
-        set text(size: 0.9em)
-        list(h, marker: [•], indent: 4pt, body-indent: 6pt)
+    #if "projects" in data and data.projects.len() > 0 [
+      #section_title("Projects")
+      #for project in data.projects {
+        v(4pt, weak: true)
+        grid(
+          columns: (1fr, auto),
+          [*#project.name*], [*#if "roles" in project and project.roles.len() > 0 { project.roles.first() }*]
+        )
+        v(2pt)
+        if "highlights" in project {
+          for h in project.highlights {
+            set text(size: 0.9em)
+            list(h, marker: [•], indent: 4pt, body-indent: 6pt)
+          }
+        }
       }
-    }
+    ]
   ],
   [
     // --- RIGHT COLUMN: SIDEBAR ---
@@ -155,15 +159,10 @@
       #v(6pt)
     ]
 
-    #if "languages" in data [
+    #if "languages" in data and data.languages.len() > 0 [
       #section_title("Languages")
       #for lang in data.languages [
-        #v(4pt)
-        #grid(
-        columns: (1fr, auto),
-        [*#lang.language*], [#text(size: 0.85em, style: "italic")[#lang.fluency]]
-        )
-        #v(-8pt)
+        *#lang.language*, #text(size: 0.85em, style: "italic")[#lang.fluency] \
       ]
     ]
   ]
