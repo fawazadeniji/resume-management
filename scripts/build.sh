@@ -63,10 +63,11 @@ show_help() {
     echo -e "${GREEN}Usage:${NC} ./scripts/build.sh [options] [data_file]"
     echo
     echo -e "${GREEN}Options:${NC}"
-    echo "  -a              Build all JSON files in data/"
-    echo "  -t <template>   Specify template file (default: $TEMPLATE)"
-    echo "  -n              Dry run (print commands only)"
-    echo "  -h, --help      Show this help menu"
+    echo "  -a                 Build all JSON files in data/"
+    echo "  -t <template>      Specify template file (default: $TEMPLATE)"
+    echo "  -n                 Dry run (print commands only)"
+    echo "  -v, --no-validate  Skip schema validation"
+    echo "  -h, --help         Show this help menu"
     echo
 
     echo -e "${GREEN}Examples:${NC}"

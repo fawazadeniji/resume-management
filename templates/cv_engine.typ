@@ -34,6 +34,18 @@
   }
 }
 
+#let format_range(start, item) = [
+  #upper(format_date(start)) -
+  #upper(
+    if "endDate" in item {
+      format_date(item.endDate)
+    } else {
+      "Present"
+    }
+  )
+]
+
+
 #let social_icon(network) = {
   let n = lower(network)
   if n == "github" { fa-github() }
@@ -94,7 +106,7 @@
         columns: (1fr, auto),
         [_#job.name _], [*#job.position*],
         "", "",
-        [_#job.location _], [#text(size: 0.85em, weight: "light")[#upper(format_date(job.startDate)) - #upper(format_date(job.endDate))]]
+        [_#job.location _], [#text(size: 0.85em, weight: "light")[#format_range(job.startDate, job)]]
       )
       v(2pt)
       for highlight in job.highlights {
