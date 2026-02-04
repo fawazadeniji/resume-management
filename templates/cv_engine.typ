@@ -4,6 +4,7 @@
 #let data_file = sys.inputs.at("data", default: "resume.json")
 #let data = json("/data/" + data_file)
 #let primary_color = rgb("#2E58FF")
+#let light_gray = rgb("#666666")
 
 #set page(
   margin: (x: 1.2cm, y: 1.2cm),
@@ -122,7 +123,7 @@
       #v(4pt, weak: true)
       #grid(
         columns: (1fr, auto),
-        [*#edu.institution*], [#format_date(edu.startDate) - #format_date(edu.endDate)],
+        [*#edu.institution*], [#format_range(edu.startDate, edu)],
         "", "",
         [_#edu.area (#edu.studyType)_], []
       )
@@ -132,6 +133,7 @@
     // --- LEFT COLUMN: PROJECTS ---
     #if "projects" in data and data.projects.len() > 0 [
       #section_title("Projects")
+      // #set text(fill: light_gray, size: 0.9em)
       #for project in data.projects {
         v(4pt, weak: true)
         grid(
