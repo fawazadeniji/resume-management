@@ -34,12 +34,13 @@ validate_file() {
 
     info "Validating ${CYAN}$file${NC}"
 
+    # Run validation without format checking (formats are informational only)
     if ajv validate \
         -s "$SCHEMA" \
         -d "$file" \
         --all-errors \
         --errors=text \
-        --strict=false; then
+        --strict=false 2>&1 | grep -v "unknown format.*ignored"; then
         success "$(basename "$file") is valid"
     else
         error "Schema validation failed for $(basename "$file")"
