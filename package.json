@@ -1,0 +1,19 @@
+{
+  "name": "resume-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./scripts/build.sh",
+    "validate": "resumed validate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.8.1",
+  "dependencies": {
+    "ajv-cli": "^5.0.0",
+    "resumed": "^6.1.0"
+  }
+}
